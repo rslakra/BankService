@@ -91,12 +91,6 @@ By default, ```.env``` file is loaded but if your application points to any othe
   specific configs
 
 
-- Get the network of your docker container:
-
-```bash
-docker inspect local-db-container | grep tod-networks
-```
-
 ## Docker development
 
 - List all make file commands

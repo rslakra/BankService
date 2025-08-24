@@ -25,12 +25,12 @@ IMAGE_TAG:=latest
 NETWORK_NAME=mysql-network
 MYSQL_CONTAINER_NAME=mysql-docker
 MYSQL_ROOT_PASSWORD=root
-MYSQL_DATABASE=tod
+MYSQL_DATABASE=BankService
 
 # Database Settings
 DATABASE_USERNAME=root
 DATABASE_PASSWORD=
-DATABASE_NAME=tod
+DATABASE_NAME=BankService
 
 ifeq ($(tag),)
 	IMAGE_TAG=latest
