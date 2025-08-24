@@ -1,0 +1,30 @@
+# Build Folders
+venv/
+tmp/
+node_modules/
+build/
+dest/
+.git/
+.github/
+**/__pycache__/**
+.venv/
+
+# Dot Files & Folders
+.DS_Store
+**/.DS_store
+*.pyc
+**/*.bak
+#**/.env*.*
+.coverage
+.vscode/
+.idea/
+**/*.log
+**/.gitignore
+**/*.md
+
+# Other Files & Folders
+docs/
+**/Dockerfile*
+**/Makefile*
+**/*.md*
+
