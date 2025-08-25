@@ -24,7 +24,7 @@ settings = get_settings()
 app = FastAPI(
     title="Banking REST Service",
     description="A comprehensive banking API with authentication, accounts, transactions, and cards",
-    version="1.0.0"
+    version="1.0.0",
 )
 
 # Add CORS middleware

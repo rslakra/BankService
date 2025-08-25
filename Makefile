@@ -84,18 +84,18 @@ setup-venv:
 	$(ACTIVATE)
 
 
-install-modules:
+install-packages:
 	@# Help: Installs the module requirements
-	@echo "Installing the requirements ..."
+	@echo "Installing Python packages ..."
 	$(ACTIVATE)
 	$(PIP) install --upgrade pip
 	$(PIP) install -r ./requirements.txt
 
 
-test:
+run-unittest:
 	@# Help: Tests the python application
 	@echo "Testing python app ..."
-	@$(PYTHON) -m unittest
+	$(PYTHON) -m unittest
 
 
 run-app:

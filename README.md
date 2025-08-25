@@ -77,6 +77,10 @@ docker-compose up --build
 - Create a virtual environment:
 
 ```
+make setup-venv
+
+OR
+
 python3 -m pip install virtualenv
 python3 -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
@@ -85,6 +89,10 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 - Install requirements/dependencies:
 
 ```
+make install-packages
+
+OR
+
 pip install --upgrade pip
 pip install -r ./requirements.txt
 ```
@@ -114,6 +122,10 @@ The API will be available at:
 - Running Tests
 ```bash
 # Run all tests
+make run-unittest
+
+OR
+
 python -m unittest
 
 #pytest test_main.py -v

@@ -191,8 +191,8 @@ class TestTransfers(BaseTestCase):
         assert response.status_code == 200
         response_json = response.json()
         assert len(response_json) >= 1
-        account1_response = [record for record in response_json if record['from_account_id'] == account1_id]
-        account2_response = [record for record in response_json if record['to_account_id'] == account2_id]
+        account1_response = list(filter(lambda record: record['from_account_id'] == account1_id, response_json))
+        account2_response = list(filter(lambda record: record['to_account_id'] == account2_id, response_json))
         assert account1_response[0]["amount"] == 200
         assert account2_response[0]["amount"] == 200
 
